@@ -1,0 +1,10 @@
+.giftCardsContainer {
+  margin-left: 16px;
+}
+
+.messageContainer {
+  padding: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

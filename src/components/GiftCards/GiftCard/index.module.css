@@ -1,0 +1,13 @@
+.giftCardContainer {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  padding: 15%;
+}
+
+.giftCardContainer:hover {
+  border-radius: 50%;
+  background-color: #e6ede8;
+}

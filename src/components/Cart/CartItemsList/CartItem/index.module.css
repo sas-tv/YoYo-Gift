@@ -1,0 +1,25 @@
+.cartItemContainer {
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
+  border-top: 1px solid #878787;
+  border-left: 1px solid #878787;
+  border-right: 0.1px solid #878787;
+  padding: 20px;
+}
+
+.imageContainer {
+  cursor: pointer;
+}
+
+.nameContainer {
+  font-weight: 500;
+  font-size: 30px;
+  margin-left: 24px;
+  margin-top: 10px;
+}
+
+.nameContainer:hover {
+  cursor: pointer;
+  color: #0087ca;
+}

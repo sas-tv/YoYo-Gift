@@ -1,0 +1,88 @@
+.giftCardReviewsContainer {
+  flex-direction: column;
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.giftCardReviewsRating {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0 0 24px;
+  text-align: center;
+}
+
+.ratingContainer {
+  padding: 10px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 45px;
+  vertical-align: middle;
+}
+
+.countContainer {
+  margin-left: 8px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.reviewItems {
+  flex-direction: column;
+  display: flex;
+  border-top: 1px solid #878787;
+  border-left: 1px solid #878787;
+  border-right: 1px solid #878787;
+  margin-right: 24px;
+}
+
+.reviewItemsInner {
+  padding: 15px;
+}
+
+.borderWrapper {
+  border-top: 1px solid #878787;
+  border-left: 1px solid #878787;
+  border-right: 1px solid #878787;
+  margin-right: 24px;
+  padding: 15px;
+}
+
+.reviewer {
+  font-weight: 500;
+  font-size: 15px;
+  margin-right: 8px;
+  color: #878787;
+}
+
+.reviewText {
+  font-weight: 400;
+  font-size: 21px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.addReviewContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.notLoggedInContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviewRatingContainer {
+  background-color: #99cc00;
+  padding: 2px 4px 2px 6px;
+  color: white;
+  display: inline-block;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 15px;
+  vertical-align: middle;
+}

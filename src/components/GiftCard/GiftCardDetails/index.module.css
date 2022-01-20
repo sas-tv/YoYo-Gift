@@ -1,0 +1,49 @@
+.giftCardDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.nameContainer {
+  font-weight: 400;
+  font-size: 25px;
+  display: inline-block;
+}
+
+.giftCardDetailsRating {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.ratingContainer {
+  background-color: #99cc00;
+  padding: 2px 4px 2px 6px;
+  color: white;
+  display: inline-block;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+.countContainer {
+  margin-left: 8px;
+  font-weight: 500;
+  color: #878787;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 24px;
+  margin-right: 24px;
+}
+
+.descriptionTextContainer {
+  font-weight: 500;
+  font-size: 17px;
+  color: #878787;
+  margin-right: 16px;
+}

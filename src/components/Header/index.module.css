@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #99cc00;
+}
+
+.headerButtonsRow {
+  display: flex;
+  padding-right: 16px;
+}
+
+.headerButtons {
+  padding-top: 18px;
+  margin-left: 24px;
+}
+
+.logOutButton {
+  background-color: white;
+  border: none;
+  color: #99cc00;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.logOutButton:hover {
+  color: #0087ca;
+}
+
+.iconContainer {
+  margin-right: 4px;
+}

@@ -1,0 +1,14 @@
+.headerContainer {
+  margin-left: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.headerContainer:hover {
+  color: #0087ca;
+}
+
+.iconContainer {
+  margin-right: 4px;
+}
