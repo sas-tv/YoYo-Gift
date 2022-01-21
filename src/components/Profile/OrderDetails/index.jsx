@@ -22,7 +22,7 @@ const OrderDetails = ({ orders }) => {
             const { name, image, orderDate, email} = order;
             return (
               <div key={index} className={orderItemContainer} 
-                style={index === orders.length - 1 ? { borderBottom:'2px solid white' } : {}}>
+                style={index === orders.length - 1 ? { borderBottom:'2px solid black' } : {}}>
                 <Image alt={name} src={image} width={100} height={50}  />
                 <div className={orederItemTextContainer}>
                   <span>Name: {name}</span>
