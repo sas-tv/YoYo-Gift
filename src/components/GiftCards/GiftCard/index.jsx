@@ -33,7 +33,7 @@ const GiftCard = ({
     router.push(`./${nameToSlug}`);
   }
   return (
-    <Grid className={giftCardContainer} onClick={handleOnCardClick}>
+    <div className={giftCardContainer} onClick={handleOnCardClick}>
       <Image 
         src={image} 
         alt={name} 
@@ -41,7 +41,7 @@ const GiftCard = ({
         width={200}
       />
       <b>{name}</b>
-    </Grid>
+    </div>
   );
 };
 

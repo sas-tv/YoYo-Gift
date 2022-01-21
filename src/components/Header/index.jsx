@@ -51,7 +51,7 @@ const Header = () => {
       redirect: false
     });
     showToastMessage({ message: 'Logout sucessful!', status: 'success'});
-    updateAppValues({userProfile: {}});
+    updateAppValues({userProfile: {}, cartItemsCount: 0, cartItems:[]});
     router.replace('/');
   };
 

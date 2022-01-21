@@ -44,11 +44,9 @@ const ProfilePage = () => {
           router.replace('login?redirect=profile');
         }
       }
-      if(!userProfile || Object.entries(userProfile).length === 0) {
-        updateAppValues({isProfileLoading: true});
-        getUserProfileData();
-        updateAppValues({isProfileLoading: false});
-      }
+      updateAppValues({isProfileLoading: true});
+      getUserProfileData();
+      updateAppValues({isProfileLoading: false});
     }
     catch(error) {
       console.log(error);
