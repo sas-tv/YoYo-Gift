@@ -19,14 +19,13 @@ export async function getServerSideProps() {
   let giftCards = [];
 
   try {
-    const giftCardsResponse = await fetch('http://localhost:3000/api/giftcards');
+    const giftCardsResponse = await fetch(`${process.env.APP_URL}api/giftcards`);
     
     const { data } = await giftCardsResponse.json();
     giftCards = data ? data : null;
   } catch(error) {
     console.log(error);
   }
-  console.log(process.env.SECRET);
   return {
     props: { giftCards }
   };

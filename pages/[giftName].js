@@ -21,7 +21,7 @@ export async function getServerSideProps(context) {
   let giftCard;
 
   try {
-    const giftCardResponse = await fetch(`http://localhost:3000/api/giftcards/${giftName}`);
+    const giftCardResponse = await fetch(`${process.env.APP_URL}api/giftcards/${giftName}`);
     const { data, error } = await giftCardResponse.json();
 
     if(!data || error) {

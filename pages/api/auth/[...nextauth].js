@@ -42,7 +42,7 @@ const nextAuthOptions = {
       }
     })
   ],
-  secret: "269f7c2565636160fea419b16fc0da9a"
+  secret: process.env.SECRET
 };
 
 export default NextAuth(nextAuthOptions);
