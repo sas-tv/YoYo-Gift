@@ -67,9 +67,11 @@ const Header = () => {
     
     <div className={header}>
       <div className={headerButtonsRow}>
-        <Link href='/' passHref={true}>
-          <Image alt="YOYO GIFT" src="/assets/yoyogifts.png" height={70} width={150} />
-        </Link>
+        <div style={{marginBottom: '16px', marginTop: '8px'}}>
+          <Link href='/' passHref={true}>
+            <Image alt="YOYO GIFT" src="/assets/yoyogifts.png" height={70} width={150} />
+          </Link>
+        </div>
         {isAppInHomePage && <>
           <SearchFilter />
           <h3 style={orHeaderStyle}>OR</h3>
