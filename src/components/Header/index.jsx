@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faUser, faShoppingCart, faRightFromBracket, faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 import { useContext, useEffect } from 'react';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
+import Image from 'next/image';
 
 import HeaderField from '../HeaderField';
 import { AppContext } from '../../utils/AppContext';
@@ -65,7 +67,9 @@ const Header = () => {
     
     <div className={header}>
       <div className={headerButtonsRow}>
-        <HeaderField redirectValue='/' headerType='h1' headerValue='YoYo Gift' />
+        <Link href='/' passHref={true}>
+          <Image alt="YOYO GIFT" src="/assets/yoyogifts.png" height={70} width={150} />
+        </Link>
         {isAppInHomePage && <>
           <SearchFilter />
           <h3 style={orHeaderStyle}>OR</h3>
