@@ -11,7 +11,7 @@ const categoryFilterData = [
   'Ecommerce',
   'Entertainment',
   'Travel',
-  'Health',
+  'Beauty',
   'Food'
 ];
 
