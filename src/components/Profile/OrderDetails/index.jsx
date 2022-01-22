@@ -6,6 +6,11 @@ import moment from 'moment';
 import { orderDetailsContainer, orderItemContainer, orederItemTextContainer } from './index.module.css';
 import { Heading } from '@chakra-ui/react';
 
+/**
+ * Displays order history for the user
+ * @param {*} param0 
+ * @returns 
+ */
 const OrderDetails = ({ orders }) => {
   return (
     <div className={orderDetailsContainer}>

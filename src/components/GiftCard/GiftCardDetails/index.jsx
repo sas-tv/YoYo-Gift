@@ -3,6 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { giftCardDetailsContainer, giftCardDetailsRating, nameContainer, ratingContainer,
   countContainer, descriptionContainer, descriptionTextContainer } from './index.module.css';
 
+/**
+ * Displays all the details for the gift card
+ * Like name, description, no of reviews and ratings
+ * @param {*} param0 
+ * @returns 
+ */
 const GiftCardDetails = ({
   giftCard: { 
     name,

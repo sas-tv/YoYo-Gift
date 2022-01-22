@@ -6,18 +6,28 @@ import CartDelivery from './CartDelivery';
 
 import CartItemsList from "./CartItemsList";
 
+/**
+ * Returns back the Cart page with all gifts in memory
+ * @returns 
+ */
 const Cart = () => {
   const [showOrderForm, setShowOrderForm] = useState(false);
 
   const { data:session } = useSession();
   const router = useRouter();
 
+  /**
+   * Redirects to login page, if the user isn't signed in
+   */
   useEffect(() => {
     if(!session) {
       router.replace('/login?redirect=cart');
     }
   });
 
+  /**
+   * Shows the second part of the page
+   */
   const handlePlaceOrderButton = () => {
     setShowOrderForm(true);
   }

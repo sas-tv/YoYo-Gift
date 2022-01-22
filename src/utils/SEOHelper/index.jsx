@@ -1,5 +1,11 @@
 import Head from "next/head";
 
+/**
+ * Reusable component to populate multiple head tags based on the input
+ * Useful for Search Engine Optimization
+ * @param {*} param0 
+ * @returns 
+ */
 const SEOHelper = ({ giftCard }) => {
   const title = giftCard?.name || 'YoYo Gift';
   const description = giftCard?.description || 'Shop unlimited giftcards for free!';

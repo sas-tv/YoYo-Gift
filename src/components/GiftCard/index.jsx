@@ -14,6 +14,12 @@ import { giftCardContainer, messageContainer, detailReviewContainer } from './in
 
 const Error_404_Image_Source = "/assets/404Error.jpg";
 
+/**
+ * Displays the gift card details
+ * Like image, description, reviews etc
+ * @param {*} param0 
+ * @returns 
+ */
 const GiftCard = ({ 
   giftCard,
   error
@@ -49,6 +55,9 @@ const GiftCard = ({
     .split(' ')
     .join('-');
     
+  /**
+   * Adds the item to cart and redirects the user to cart page
+   */
   const handleOnAddToCart = async () => {
     if(!session) {
       router.push(`/login?redirect=${giftNameToSlug}`);

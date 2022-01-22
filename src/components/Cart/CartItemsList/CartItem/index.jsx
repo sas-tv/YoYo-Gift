@@ -7,6 +7,11 @@ import { AppContext } from '../../../../utils/AppContext';
 
 import { cartItemContainer, imageContainer, nameContainer } from './index.module.css';
 
+/**
+ * Returns back the 1st sub-page for Cart, displays all the items in cart
+ * @param {*} param0 
+ * @returns 
+ */
 const CartItem = ({ 
   item: {
     name,
@@ -33,6 +38,9 @@ const CartItem = ({
       .join('-');
   }
 
+  /**
+   * Removes the specified item from user's cart
+   */
   const handleOnRemoveCartButton = async () => {
     setIsRemoveItemLoading(true);
 

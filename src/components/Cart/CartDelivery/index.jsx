@@ -6,6 +6,10 @@ import { useContext, useState } from "react";
 
 import { AppContext } from "../../../utils/AppContext";
 
+/**
+ * Returns back the delivery page
+ * @returns 
+ */
 const CartDelivery = () => {
   const { 
     appData: { cartItems },
@@ -19,6 +23,10 @@ const CartDelivery = () => {
   const [emailError, setEmailError] = useState('');
   const [isLoading, setIsLoading] = useState('');
   
+  /**
+   * Orders all items for the specified email and redirects to profile page
+   * @returns 
+   */
   const handleOnDeliverButton = async () => {
     var emailRegex = new RegExp("[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$");
     if(!email.match(emailRegex)) {

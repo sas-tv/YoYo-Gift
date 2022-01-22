@@ -15,10 +15,18 @@ const categoryFilterData = [
   'Food'
 ];
 
+/**
+ * Displays category filter in the Header section
+ * @returns 
+ */
 const CategoryFilter = () => {
   const { updateAppValues,
     appData } = useContext(AppContext);
 
+  /**
+   * Retrieves gift cards on selection of a category
+   * @param {*} param0 
+   */
   const handleOnCategoryChange = async ({ target: { value }}) => {
     updateAppValues({ 
       selectedGiftCategory: value,

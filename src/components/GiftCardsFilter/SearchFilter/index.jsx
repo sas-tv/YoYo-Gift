@@ -8,6 +8,10 @@ import { AppContext } from '../../../utils/AppContext';
 
 import { searchFilterContainer } from './index.module.css';
 
+/**
+ * Displays search filter to search gift cards
+ * @returns 
+ */
 const SearchFilter = () => {
   const { appData: { searchedText }, 
   updateAppValues
@@ -15,6 +19,11 @@ const SearchFilter = () => {
 
   const debouncedApiHelper = useRef(debounce(searchText => handleApiCall(searchText), 300)).current;
 
+  /**
+   * Calls api to fetch data accordingly and update the UI
+   * @param {*} searchText 
+   * @returns 
+   */
   const handleApiCall = async (searchText) => {
     const isSearchTextEmpty = searchText === '';
     
@@ -49,6 +58,11 @@ const SearchFilter = () => {
     }  
   };
   
+  /**
+   * Updates searched text value to in-memory variable
+   * Uses debounce technique to call API, if the diff of duration between the entered text is more than 300 milli-seconds
+   * @param {*} param0 
+   */
   const handleOnSearchTextChange = ({ target: { value } }) => {
     updateAppValues({searchedText: value});
     debouncedApiHelper(value);

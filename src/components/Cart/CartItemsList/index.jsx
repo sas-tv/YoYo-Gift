@@ -8,6 +8,11 @@ import { AppContext } from '../../../utils/AppContext';
 
 import { cartContainer, headerContainer } from './index.module.css';
 
+/**
+ * Displays the place order button with the list of items in the cart
+ * @param {*} param0 
+ * @returns 
+ */
 const CartItemsList = ({ handlePlaceOrder }) => {
   const { appData: {
     cartItemsCount,

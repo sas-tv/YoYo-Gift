@@ -14,6 +14,11 @@ import { giftCardReviewsContainer, heading, giftCardReviewsRating, ratingContain
   countContainer, reviewItems, reviewer, reviewItemsInner, borderWrapper, reviewText,
   addReviewContainer, notLoggedInContainer, reviewRatingContainer } from './index.module.css';
 
+/**
+ * Displays all the reviews for the gift card and gives an option to post review to a signed in user
+ * @param {*} param0 
+ * @returns 
+ */
 const GiftCardReviews = ({ 
   giftName,
   reviews,

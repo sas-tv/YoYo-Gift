@@ -5,6 +5,11 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 import { giftCardDetailsImageContainer, imageContainer } from './index.module.css';
 
+/**
+ * Display the image of the gift card and the add to cart button
+ * @param {*} param0 
+ * @returns 
+ */
 const GiftCardImage = ({
   giftCard: { 
     name,
